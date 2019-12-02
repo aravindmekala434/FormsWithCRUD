@@ -1,0 +1,81 @@
+<app-employee-list></app-employee-list>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<div class="emp-form">
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <label>Student Id</label> 
+    </div>
+    <div class="col-md-9 form-group">
+      <input placeholder="Student Id" class="form-control" [(ngModel)]="employeeService.currentEmployee.id">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <label>Student Name</label> 
+    </div>
+    <div class="col-md-9 form-group">
+      <input placeholder="Name" class="form-control" [(ngModel)]="employeeService.currentEmployee.Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <label>Email</label>
+    </div>
+    <div class="col-md-9 form-group">
+      <input placeholder="Email" class="form-control" [(ngModel)]="employeeService.currentEmployee.Email">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <label>Class</label>
+    </div>
+    <div class="col-md-9 form-group">
+      <input placeholder="Class" class="form-control" [(ngModel)]="employeeService.currentEmployee.Class">
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-md-3 form-group">
+      <label>Year</label>
+    </div>
+    <div class="col-md-9 form-group">
+      <input placeholder="Year" class="form-control" [(ngModel)]="employeeService.currentEmployee.Year">
+    </div>
+  </div>
+  <div class="row"> 
+      <div class="col-md-3 form-group">
+        <label>City</label>
+      </div>
+      <div class="col-md-9 form-group">
+        <input placeholder="City" class="form-control" [(ngModel)]="employeeService.currentEmployee.City">
+      </div>
+  </div>
+  <div class="row"> 
+      <div class="col-md-3 form-group">
+        <label>Country</label>
+      </div>
+      <div class="col-md-9 form-group">
+        <input placeholder="Country" class="form-control" [(ngModel)]="employeeService.currentEmployee.Country">
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <button class="btn btn-success btn-lg btn-block" (click)="createEmployee(employeeService.currentEmployee)">
+        <i class="fa fa-save"></i>
+        SAVE
+      </button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-lg btn-block" (click)="clearEmployee(employeeService.currentEmployee)">
+        <i class="fa fa-retweet"></i>
+        CLEAR
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- <app-employee-list></app-employee-list> -->

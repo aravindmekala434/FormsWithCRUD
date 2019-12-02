@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Form with crud operations</title>
+    </head>
+    <body> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="jumbotron">
+                        <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                                <div class="form-group">
+                                    <label for="firstname">FirstName</label> 
+                                    <input type="text" class="form-control" [(ngModel)]="model.firstname" #firstname="ngModel"
+                                    [ngClass]="{'is-invalid':f.submitted && firstname.invalid}" name="firstname" required  />
+                                    <div *ngIf="f.submitted && firstname.invalid" class="invalid-feedback">
+                                        <div *ngIf="firstname.errors.required">First Name  is Required</div>
+                                        <!-- <div *ngIf="email.errors.email">Email must be a valid Email Address</div> -->
+                                    </div>   
+                                </div>
+                                <div class="form-group">
+                                    <label for="middlename">MiddleName</label> 
+                                    <input type="text" class="form-control" [(ngModel)]="model.middlename" #middlename="ngModel"
+                                    [ngClass]="{'is-invalid':f.submitted && middlename.invalid}" name="middlename" required  />
+                                    <div *ngIf="f.submitted && middlename.invalid" class="invalid-feedback">
+                                        <div *ngIf="middlename.errors.required">Middle Name  is Required</div>
+                                        <!-- <div *ngIf="email.errors.email">Email must be a valid Email Address</div> -->
+                                    </div>   
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">LastName</label> 
+                                    <input type="text" class="form-control" [(ngModel)]="model.lastname" #lastname="ngModel"
+                                    [ngClass]="{'is-invalid':f.submitted && lastname.invalid}" name="lastname" required  />
+                                    <div *ngIf="f.submitted && lastname.invalid" class="invalid-feedback">
+                                        <div *ngIf="lastname.errors.required">Last Name  is Required</div>
+                                            <!-- <div *ngIf="email.errors.email">Email must be a valid Email Address</div> -->
+                                    </div>   
+                                </div>
+                                <div class="form-group">
+                                        <label for="mobilenumber">Mobile Number</label> 
+                                        <input type="text" class="form-control" [(ngModel)]="model.mobilenumber" #fmobilenumber="ngModel"
+                                        [ngClass]="{'is-invalid':f.submitted && mobilenumber.invalid}" name="mobilenumber" required minlength="10" />
+                                        <div *ngIf="f.submitted && mobilenumber.invalid" class="invalid-feedback">
+                                            <div *ngIf="mobilenumber.errors.required">Enter valid mobile number</div>
+                                                <!-- <div *ngIf="email.errors.email">Email must be a valid Email Address</div> -->
+                                        </div>   
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email">Email</label> 
+                                        <input type="text" class="form-control" [(ngModel)]="model.email" #email="ngModel"
+                                        [ngClass]="{'is-invalid':f.submitted && email.invalid}" name="email" required email />
+                                        <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                                            <div *ngIf="email.errors.required">Email Name  is Required</div>
+                                            <div *ngIf="email.errors.email">Email must be a valid Email Address</div>
+                                        </div>   
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label> 
+                                        <input type="password" class="form-control" [(ngModel)]="model.password" #password="ngModel"
+                                        [ngClass]="{'is-invalid':f.submitted && password.invalid}" name="password" required minlength="6" />
+                                        <div  *ngIf="f.submitted && password.invalid"  class="invalid-feedback">
+                                            <div *ngIf="password.errors.required">password is required</div>
+                                            <div *ngIf="password.errors.minlength">password must be atleast 6 Characters</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">   
+                                        <!-- <button class="btn btn-primary">Submit</button> -->
+                                        <!-- <button class="btn btn-primary">Login</button> -->
+                                        <button class="btn btn-primary" routerLink="/submit" routerLinkActive="active">Submit</button>
+                                    </div>
+                                        <!-- <div class="form-group">   
+                                        <button class="btn btn-primary">Login</button>
+                                        </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- </body>
+</html> -->
+
+
+

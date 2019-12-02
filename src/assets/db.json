@@ -1,0 +1,22 @@
+{
+  "Employee": [
+    {
+      "id": 2,
+      "Name": "naresh",
+      "Email": "naresh@gmail.com",
+      "Class": "degree",
+      "Year": "2014",
+      "City": "Hyderabad",
+      "Country": "India"
+    },
+    {
+      "id": 3,
+      "Name": "mahesh",
+      "Email": "mahesh@gmail.com",
+      "Class": "pg",
+      "Year": "2018",
+      "City": "vizag",
+      "Country": "India"
+    }
+  ]
+}
